@@ -22,3 +22,7 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+# Start Server:
+
+pg_ctl -D /usr/local/var/postgres start
