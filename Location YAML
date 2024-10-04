@@ -1,0 +1,12 @@
+Location
+name:string lat1:decimal lng1:decimal lat2:decimal lng2:decimal lat3:decimal lng3:decimal lat4:decimal lng4:decimal image_url:string
+
+Address
+address_string: string
+location_id: integer
+
+Human
+name: string
+lat: decimal
+lng: decimal
+location_last_updated: datetime
