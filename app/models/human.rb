@@ -72,5 +72,6 @@ class Human < ApplicationRecord
     def checkIfAddressMatches(addresses)
         addresses.each do |address|
         end
+        false
     end
 end
