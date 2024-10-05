@@ -58,6 +58,8 @@ class Human < ApplicationRecord
         if !(above1xor3 && above2xor4)
             matchesAddress = checkIfAddressMatches(location.addresses)
         end
+        p (above1xor3 && above2xor4) || matchesAddress
+        p "*_*_*_*_*_*_*_*_*_*_*_*"
         (above1xor3 && above2xor4) || matchesAddress
     end
 
