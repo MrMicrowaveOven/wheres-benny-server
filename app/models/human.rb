@@ -10,6 +10,8 @@ class Human < ApplicationRecord
                 break
             end
         end
+        p "++++++++++++++++"
+        p active_location
         update(location: active_location)
     end
 
