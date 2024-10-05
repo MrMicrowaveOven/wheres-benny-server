@@ -6,7 +6,4 @@ address_string: string
 location_id: integer
 
 Human
-name: string
-lat: decimal
-lng: decimal
-location_last_updated: datetime
+name:string lat:decimal lng:decimal location_last_updated:datetime
