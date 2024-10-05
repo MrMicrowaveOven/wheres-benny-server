@@ -26,6 +26,8 @@ class Human < ApplicationRecord
         lng4 = location.lng4
 
         slope1 = get_slope([lat1, lng1], [lat2, lng2])
+        p "========================="
+        p get_slope([lat1, lng1], [lat2, lng2])
         lng_at_lng_1 = slope1 * (lat1 - lat) + lng1
         aboveLine1 = lng_at_lng_1 > lng
 
