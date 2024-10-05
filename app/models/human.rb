@@ -46,6 +46,14 @@ class Human < ApplicationRecord
         above1xor3 = (aboveLine1 && !aboveLine3) || (!aboveLine1 && aboveLine3)
         above2xor4 = (aboveLine2 && !aboveLine4) || (!aboveLine2 && aboveLine4)
 
+        if location.id == 2
+            p "RAW HIDE"
+            p aboveLine1
+            p aboveLine2
+            p aboveLine3
+            p aboveLine4
+            p "=============-------------=============="
+        end
         matchesAddress = false
         if !(above1xor3 && above2xor4)
             matchesAddress = checkIfAddressMatches(location.addresses)
