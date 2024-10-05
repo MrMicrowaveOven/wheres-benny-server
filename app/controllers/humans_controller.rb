@@ -7,6 +7,7 @@ class HumansController < ApplicationController
         else
             human = Human.create(name: human_params['name'], lat: human_params['lat'], lng: human_params['lng'], location_last_updated: Time.now)
         end
+        human.check_location
         render :json => human
     end
 
