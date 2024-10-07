@@ -64,8 +64,8 @@ class Human < ApplicationRecord
     end
 
     def get_slope(location1, location2)
-        numerator = location1[0] - location2[0]
-        denominator = location1[1] - location2[1]
+        denominator = location1[0] - location2[0]
+        numerator = location1[1] - location2[1]
         numerator / denominator
     end
 
